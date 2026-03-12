@@ -6,7 +6,7 @@ Skill files for AI agents and Claude Code users working with SMBcrm. Skills are 
 
 A skill is a markdown file that gives an AI assistant (like Claude) deep, platform-specific knowledge about a particular domain. When a skill is loaded, the assistant knows the right terminology, correct API patterns, and best practices — without you having to explain them.
 
-Skills in this repo are designed for use with [Claude Code](https://claude.ai/code) and other MCP-compatible AI clients.
+Skills in this repo are designed for use with Claude Code, OpenClaw, Codex, and other MCP-compatible AI clients.
 
 ## Available Skills
 
@@ -16,15 +16,29 @@ Skills in this repo are designed for use with [Claude Code](https://claude.ai/co
 
 ## Using a Skill
 
-### Option 1 — Claude Code (recommended)
+### Option 1 — Claude Code
 
 Add this repo as a skill source in your Claude Code settings, or copy the skill file into your project's `.claude/skills/` directory.
 
-### Option 2 — Manual
+### Option 2 — OpenClaw
 
-Paste the contents of a skill file into your AI assistant's system prompt or context window before starting your session.
+In OpenClaw, add the skill file via **Settings → Skills → Add from URL** using the raw GitHub URL:
 
-### Option 3 — MCP
+```
+https://raw.githubusercontent.com/SMBcrm/skills/main/skills/smbcrm-skill.md
+```
+
+Or clone this repo and point OpenClaw at your local copy.
+
+### Option 3 — Codex
+
+In Codex, add the skill to your agent's context by referencing the raw file URL, or paste the skill content directly into your Codex system prompt / instructions block.
+
+### Option 4 — Manual
+
+Paste the contents of a skill file into your AI assistant's system prompt or context window before starting your session. Works with any AI tool that accepts a system prompt.
+
+### Option 5 — MCP
 
 If your AI client supports MCP, point it at `https://services.smbcrm.com/mcp/` using your Private Integration Token. The `smbcrm-skill.md` skill explains the full setup.
 
