@@ -12,7 +12,7 @@ Skills in this repo are designed for use with Claude Code, OpenClaw, Codex, and 
 
 | Skill | Description |
 |---|---|
-| [`skills/smbcrm-skill.md`](skills/smbcrm-skill.md) | Advanced tools: Private Integration Tokens, REST API v2, Workflows, Webhooks, MCP, and Agent Studio |
+| [`skills/SKILL.md`](skills/SKILL.md) | Advanced tools: Private Integration Tokens, REST API v2, Workflows, Webhooks, MCP, and Agent Studio |
 
 ## Using a Skill
 
@@ -25,7 +25,7 @@ Add this repo as a skill source in your Claude Code settings, or copy the skill 
 In OpenClaw, add the skill file via **Settings → Skills → Add from URL** using the raw GitHub URL:
 
 ```
-https://raw.githubusercontent.com/SMBcrm/skills/main/skills/smbcrm-skill.md
+https://raw.githubusercontent.com/SMBcrm/skills/main/skills/SKILL.md
 ```
 
 Or clone this repo and point OpenClaw at your local copy.
